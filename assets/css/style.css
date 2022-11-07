@@ -9,6 +9,129 @@ body {
   line-height: 1.5;
 }
 
+/* add style to header */
+header {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  background-color: #F2AEC7;
+  display: flex;
+  justify-content: space-between;
+}
+
+header h1 {
+  font-weight: bold;
+  font-size: 48px;
+  color: #401f14;
+  background-color: white;
+  padding-right: 20px;
+  padding-left: 20px;
+}
+
+ul {
+  list-style: none;
+  display: flex;
+  text-decoration: none;
+  /* flex-wrap: wrap; */
+  justify-content: space-between;
+  align-items: center;
+}
+
+header nav ul li a {
+  margin: 0 30px;
+  font-size:xx-small;
+  color: #401f14;
+  text-decoration: none;
+  border-bottom: 3px solid;
+  padding-bottom: 2px;
+}
+
+.page-contact ul li a {
+  margin: 0 30px;
+  font-size:xx-small;
+  color: #401f14;
+  text-decoration: none;
+  border-bottom: 3px solid;
+  padding-bottom: 2px;
+}
+
+/* add style to hero banner */
+#banner {
+  padding: 25px;
+  width:100%;
+  background-image: url("../images/02-hero-bg.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.hero-banner h2 {
+  font-size: 20px;
+  color: #401f14;
+  margin-top: 300px;
+  background-color:#F2AEC7;
+  padding-left: 100px;
+  padding-right: 100px;
+}
+
+/* about me */
+.section {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 30px;
+  margin-left: 50px;
+  margin-right:50px;
+}
+.content-and-divider {
+  display: flex;
+  flex-direction: row;
+}
+
+#content-divider {
+  margin-left: 100px;
+  height: 100px;
+  border-left: 16px solid black;
+}
+
+#about-me-text {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+img {
+  height: 300px;
+  width: 300px;
+}
+
+#img1 {
+  height: 300px;
+  width: 680px;
+}
+
+#work-text {
+  padding-right: 8px;
+}
+
+.portfolio-1 {
+  display: grid;
+  grid-template-columns: 1fr;
+  justify-content: center;
+  display: flex;
+}
+
+/* gird for images */
+.portfolio {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
+}
+
+#two-rows { 
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
 h1,
 h2,
 h3,
@@ -22,11 +145,26 @@ p {
   margin: 0;
 }
 
+/* responsive */
+@media only screen and (max-width: 1000px) {
+  header {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background-color: #F2AEC7;
+    display: flex;
+    flex-direction: column;
+  }
 
+  h1 {
+    text-align: center;
+  }
 
-.vl-border3 {
-  border-right: 3px solid #39a6b2;
-  height: 100px;
-  flex: 2 5%;
- 
+  #contact, #work {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .content-and-divider {
+    text-align: center;
+  }
 }
