@@ -27,6 +27,16 @@ header h1 {
   padding-left: 20px;
 }
 
+#name-and-picture {
+  display: flex;
+  flex-direction: row;
+}
+
+#avatar {
+  height: 75px;
+  width: 75px;
+}
+
 ul {
   list-style: none;
   display: flex;
